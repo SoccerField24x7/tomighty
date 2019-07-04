@@ -49,8 +49,8 @@ I have updated (or ripped out) the dated build directives, so you don't have any
 Keep in mind that I am not a Java developer by trade so my solutions may not be as elegant as they could be, but here are a few things I had to do to get a new executable:
 
 * Set the `JAVA_HOME` environment variable: `control sysdm.cpl`. Although `javac` was in my path, the build kept complaining that it couldn't find javac in *C:\Program Files\Java\jre1xxx*.  I tried copying it there for grins and giggles, but that wasn't the answer...
-** Point `JAVA_HOME` to the root *?\jdk1xxx* directory, not the `?\jdk1xxx\bin\`
-** Be sure to close your cmd window, and reopen it after updating environment/path variables.
+  * Point `JAVA_HOME` to the root *?\jdk1xxx* directory, not the `?\jdk1xxx\bin\`
+  * Be sure to close your cmd window, and reopen it after updating environment/path variables.
 * I was also getting an error that the Maven executable could not be found.  A helpful Stack Overflow post suggested that I copy bin/mvn.cmd to mvn.bat.  That moved me past that issue.
 
 ## Things I didn't Need
